@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NewEntry"
+    tools:showIn="@layout/activity_new_entry_day">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/small_blue_text"
+                    android:layout_gravity="center"
+                    android:text="@string/new_entry_profile_txt" />
+
+                <Spinner
+                    android:id="@+id/profile_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/event_name"
+                style="@style/edit_text"
+                android:hint="@string/event_name" />
+
+            <EditText
+                android:id="@+id/event_description"
+                style="@style/edit_text"
+                android:hint="@string/event_description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/event_location_button"
+                    style="@style/blue_buttons_2"
+                    android:src="@drawable/ic_add_location" />
+
+                <EditText
+                    android:id="@+id/event_location"
+                    style="@style/edit_text"
+                    android:hint="@string/event_location" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/bold_small_blue_text"
+                android:layout_gravity="center"
+                android:background="@color/lightBlue"
+                android:text="@string/from_txt" />
+
+            <TimePicker
+                android:id="@+id/event_time_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TimePicker>
+
+            <TextView
+                style="@style/bold_small_blue_text"
+                android:layout_gravity="center"
+                android:background="@color/lightBlue"
+                android:text="@string/till_txt" />
+
+            <TimePicker
+                android:id="@+id/event_time_till"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TimePicker>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/small_blue_text"
+                    android:layout_gravity="center"
+                    android:text="@string/new_entry_type_txt" />
+
+                <Spinner
+                    android:id="@+id/event_type_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/event_type"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/small_blue_text"
+                    android:layout_gravity="center"
+                    android:text="@string/new_entry_invite_txt" />
+
+                <Spinner
+                    android:id="@+id/event_invite_apps_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+
+            <TextView
+                style="@style/bold_large_blue_text"
+                android:text="@string/new_entry_reminder_txt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightBlue"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/add_reminder_button"
+                    style="@style/blue_buttons_2"
+                    android:src="@android:drawable/ic_menu_add" />
+
+                <EditText
+                    android:id="@+id/new_entry_reminder_num"
+                    style="@style/edit_text_2"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/new_entry_reminder_min_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/event_reminder_min_hr"></Spinner>
+
+                <Spinner
+                    android:id="@+id/new_entry_reminder_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/event_reminder_period"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

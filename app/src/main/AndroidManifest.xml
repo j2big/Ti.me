@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.time.time">
+
+    <uses-sdk tools:overrideLibrary="com.pes.androidmaterialcolorpickerdialog" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddProfile"
+            android:label="@string/title_activity_add_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Bin"
+            android:label="@string/title_activity_bin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImportCalendar"
+            android:label="@string/title_activity_import_calendar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StarredEntries"
+            android:label="@string/title_activity_starred_entries"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".NewEntry"
+            android:label="@string/title_activity_selected_day"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectedDay"
+            android:label="@string/title_activity_selected_day"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85">
+
+        <LinearLayout
+            android:id="@+id/main_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/import_calendar_button"
+                style="@style/blue_buttons"
+                android:src="@drawable/ic_import" />
+
+            <ImageButton
+                android:id="@+id/starred_button"
+                style="@style/blue_buttons"
+                android:src="@drawable/ic_star_white" />
+
+            <ImageButton
+                android:id="@+id/bin_button"
+                style="@style/blue_buttons"
+                android:src="@drawable/ic_bin" />
+
+            <ImageButton
+                android:id="@+id/add_profiles_button"
+                style="@style/blue_buttons"
+                android:src="@drawable/ic_add" />
+
+            <ImageButton
+                android:id="@+id/settings_button"
+                style="@style/blue_buttons"
+                android:src="@drawable/ic_settings" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <CalendarView
+        android:id="@+id/calender_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.15">
+
+    </CalendarView>
+
+</LinearLayout>

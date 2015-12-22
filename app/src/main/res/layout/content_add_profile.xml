@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.time.time.AddProfile"
+    tools:showIn="@layout/activity_add_profile">
+
+
+    <EditText
+        android:id="@+id/profile_name"
+        style="@style/edit_text"
+        android:hint="@string/profile_name_txt"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/profile_description"
+        style="@style/edit_text"
+        android:hint="@string/profile_description_txt" />
+
+
+    <Button
+        android:id="@+id/select_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/select_color_txt" />
+
+    <TextView
+        style="@style/bold_small_blue_text"
+        android:text="@string/profile_list_header" />
+
+    <ListView
+        android:id="@+id/profile_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
+
+
